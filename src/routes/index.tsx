@@ -78,6 +78,13 @@ const steps = [
   { num: "05", title: "Запуск", description: "Деплой, тесты, правки и передача готового лендинга вам." },
 ];
 
+const navLinks = [
+  { href: "#projects", label: "Портфолио" },
+  { href: "#services", label: "Услуги" },
+  { href: "#process", label: "Процесс" },
+  { href: "#contact", label: "Контакты" },
+];
+
 function Index() {
   return (
     <main className="relative overflow-hidden bg-background text-foreground">
