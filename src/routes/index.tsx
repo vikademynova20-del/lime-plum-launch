@@ -86,10 +86,64 @@ const navLinks = [
 ];
 
 function Index() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <main className="relative overflow-hidden bg-background text-foreground">
       {/* Decorative background glows */}
       <div className="pointer-events-none absolute inset-0 grain" />
+
+      {/* Header */}
+      <header className="fixed left-0 right-0 top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <a href="#" className="font-display text-lg font-bold">
+            Виктория Дей
+          </a>
+
+          {/* Desktop nav */}
+          <nav className="hidden items-center gap-8 md:flex">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* Mobile menu toggle */}
+          <button
+            type="button"
+            aria-label={mobileMenuOpen ? "Закрыть меню" : "Открыть меню"}
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-border bg-secondary text-secondary-foreground transition-colors hover:bg-plum-lighter md:hidden"
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <nav className="border-t border-border/50 bg-background px-4 py-4 md:hidden">
+            <ul className="flex flex-col gap-3">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block rounded-lg px-3 py-2.5 text-base font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+      </header>
       <div className="pointer-events-none absolute -left-32 top-0 h-[500px] w-[500px] rounded-full bg-primary/10 blur-[120px]" />
       <div className="pointer-events-none absolute right-0 top-[40%] h-[400px] w-[400px] rounded-full bg-cyan-glow/10 blur-[100px]" />
 
