@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, MessageCircle, Mail, Sparkles, Zap, Layers, Rocket, CheckCircle2 } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, MessageCircle, Mail, Sparkles, Zap, Layers, Rocket, CheckCircle2, Menu, X } from "lucide-react";
 
 import projectFlowers from "@/assets/project-flowers.jpg";
 import projectFintech from "@/assets/project-fintech.jpg";
