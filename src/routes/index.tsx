@@ -96,8 +96,8 @@ function Index() {
             Доступна для новых проектов
           </div>
           <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-balance">
-            Лендинги, которые <br className="hidden sm:block" />
-            <span className="text-primary">запускаются за дни</span>
+            Лендинг за 3 дня — <br className="hidden sm:block" />
+            <span className="text-primary">от идеи до рабочей ссылки</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
             Я Виктория, вайб-кодер. Создаю быстрые, стильные и продающие посадочные страницы для стартапов, экспертов и малого бизнеса.
