@@ -301,7 +301,7 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="relative px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <section id="contact" className="relative px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-border bg-card px-6 py-16 text-center sm:px-12 lg:py-20">
           <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-primary/20 blur-[80px]" />
           <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-cyan-glow/15 blur-[80px]" />
