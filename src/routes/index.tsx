@@ -148,7 +148,7 @@ function Index() {
       <div className="pointer-events-none absolute right-0 top-[40%] h-[400px] w-[400px] rounded-full bg-cyan-glow/10 blur-[100px]" />
 
       {/* Hero */}
-      <section className="relative px-4 pb-20 pt-24 sm:px-6 lg:px-8 lg:pb-32 lg:pt-40">
+      <section className="relative px-4 pb-24 pt-28 sm:px-6 lg:px-8 lg:pb-32 lg:pt-40">
         <div className="mx-auto max-w-5xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-1.5 text-sm font-medium text-muted-foreground backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
@@ -186,7 +186,7 @@ function Index() {
       </section>
 
       {/* Featured Projects */}
-      <section id="projects" className="relative px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <section id="projects" className="relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between lg:mb-16">
             <div>
@@ -250,7 +250,7 @@ function Index() {
       </section>
 
       {/* Services */}
-      <section id="services" className="relative px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <section id="services" className="relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center lg:mb-16">
             <span className="font-display text-sm font-semibold uppercase tracking-wider text-primary">Услуги</span>
@@ -275,7 +275,7 @@ function Index() {
       </section>
 
       {/* Process */}
-      <section id="process" className="relative px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <section id="process" className="relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 lg:mb-16">
             <span className="font-display text-sm font-semibold uppercase tracking-wider text-primary">Процесс</span>
@@ -301,7 +301,7 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section id="contact" className="relative px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <section id="contact" className="relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
         <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-border bg-card px-6 py-16 text-center sm:px-12 lg:py-20">
           <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-primary/20 blur-[80px]" />
           <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-cyan-glow/15 blur-[80px]" />
@@ -319,7 +319,7 @@ function Index() {
                 href="https://t.me/"
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-7 py-4 font-display text-base font-semibold text-primary-foreground transition-transform hover:scale-[1.02] sm:w-auto"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-8 py-5 font-display text-base font-semibold text-primary-foreground transition-transform hover:scale-[1.02] sm:w-auto sm:px-7 sm:py-4"
               >
                 <MessageCircle className="h-5 w-5" />
                 Telegram
@@ -327,7 +327,7 @@ function Index() {
               </a>
               <a
                 href="mailto:hello@victoriaday.dev"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-secondary px-7 py-4 font-display text-base font-semibold text-secondary-foreground transition-colors hover:bg-plum-lighter sm:w-auto"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-secondary px-8 py-5 font-display text-base font-semibold text-secondary-foreground transition-colors hover:bg-plum-lighter sm:w-auto sm:px-7 sm:py-4"
               >
                 <Mail className="h-5 w-5" />
                 Email
