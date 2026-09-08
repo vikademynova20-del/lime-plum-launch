@@ -107,9 +107,9 @@ function Index() {
               href="https://t.me/"
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 font-display text-base font-semibold text-primary-foreground transition-transform hover:scale-[1.02] hover:bg-primary/95"
+              className="group inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 font-display text-base font-semibold text-primary-foreground shadow-lg shadow-primary/25 ring-1 ring-primary/60 transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary/95 hover:shadow-xl hover:shadow-primary/35 hover:ring-primary"
             >
-              Написать в Telegram
+              Обсудить проект
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
